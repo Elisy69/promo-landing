@@ -1,9 +1,13 @@
-function LogoIcon() {
+interface LogoIconProps {
+  isDesktop?: boolean;
+}
+
+function LogoIcon({ isDesktop }: LogoIconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="100"
-      height="24"
+      width={`${isDesktop ? "140" : "100"}`}
+      height={`${isDesktop ? "30" : "24"}`}
       fill="none"
       viewBox="0 0 100 24"
     >
