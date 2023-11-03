@@ -40,7 +40,7 @@ const formFields = [
 ];
 
 interface RegistrationFormProps {
-  handleAuthorizationSuccess: () => void;
+  handleAuthorizationSuccess: (name: string) => void;
 }
 
 function RegistrationForm({
@@ -60,7 +60,7 @@ function RegistrationForm({
     for (const [key, value] of Object.entries(errors)) {
       switch (key) {
         case "login":
-          newErrors["name"] = value;
+          newErrors["email"] = value;
           break;
         case "rules1":
           newErrors["terms"] = value;
@@ -86,10 +86,9 @@ function RegistrationForm({
       );
       if (response.ok) {
         const responseData = await response.json();
-        console.log("Response Data:", responseData);
         responseData.error
           ? setErrors(transformErrors(responseData.error))
-          : handleAuthorizationSuccess();
+          : handleAuthorizationSuccess(formData.name);
       }
     } catch (error) {
       console.log(error);
@@ -125,7 +124,7 @@ function RegistrationForm({
   };
 
   return (
-    <div className="p-6">
+    <div className="">
       <section className="flex justify-center relative">
         <h1 className="m-0 text-[1.7rem] font-md">РЕГИСТРАЦИЯ</h1>
       </section>
@@ -155,18 +154,15 @@ function RegistrationForm({
           ))}
           <li className="flex flex-col gap-2">
             <div className="flex gap-2">
-              <div className="">
-                <input
-                  type="checkbox"
-                  name="terms"
-                  id="terms"
-                  onChange={handleChange}
-                  className="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 pointer-events-none focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                />
-              </div>
-              <div>
-                {" "}
-                <span className="text-sm">
+              <input
+                type="checkbox"
+                name="terms"
+                id="terms"
+                onChange={handleChange}
+                className="custom-checkbox"
+              />
+              <label htmlFor="terms" className="text-sm">
+                <p>
                   Я согласен с{" "}
                   <a
                     className="underline underline-offset-1 text-[#3C4497]"
@@ -178,8 +174,8 @@ function RegistrationForm({
                   <a className="underline underline-offset-1 text-[#3C4497]">
                     положением о конфиденциальности
                   </a>
-                </span>
-              </div>
+                </p>
+              </label>
             </div>
             {errors.terms && (
               <span className="text-red-500 text-sm">{errors.terms}</span>
@@ -190,7 +186,7 @@ function RegistrationForm({
             text="ЗАРЕГЕСТРИРОВАТЬСЯ"
             handleSubmit={handleSubmit}
           />
-          <span className="text-center text-sm">
+          <span className="text-center text-sm sm:text-base">
             Есть аккаунт?{" "}
             <a className="underline underline-offset-1 text-[#3C4497]" href="">
               Авторизуйся

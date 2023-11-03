@@ -2,12 +2,12 @@ function CloseButtonModal() {
   return (
     <button
       type="button"
-      className="absolute hs-dropdown-toggle left-[92%] top-[7%]"
+      className="z-[60] absolute hs-dropdown-toggle left-[93%] top-[2%]"
       data-hs-overlay="#hs-basic-modal"
     >
       <span className="sr-only">Close</span>
       <svg
-        className="w-[1.1rem] h-[1.1rem]"
+        className="w-[1rem] h-[1rem] sm:w-[1.3rem] sm:h-[1.3rem]"
         viewBox="0 0 8 8"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
