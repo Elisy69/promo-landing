@@ -33,5 +33,5 @@
 .custom-checkbox:checked + label::before {
   border-color: #3c4497;
   background-color: #3c4497;
-  background-image: url("src/assets/Vector 8.svg");
+  background-image: url("/images/checkmark.svg");
 }
