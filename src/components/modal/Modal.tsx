@@ -24,7 +24,7 @@ function Modal() {
           isAuthorized ? "mt-[10rem]" : "mt-12"
         } flex justify-center hs-overlay-open:opacity-100 hs-overlay-open:duration-500 opacity-0 transition-all  w-full h-full sm:h-auto`}
       >
-        <div className="px-8 pb-6 pt-4 sm:pb-8 sm:pt-6 sm:px-16 w-full sm:w-[28rem] relative flex flex-col bg-[#FFD907] shadow-sm rounded-t-2xl sm:rounded-2xl ">
+        <div className="px-8 sm:px-16 pb-6 pt-4 sm:pb-8 sm:pt-6  w-full sm:w-[28rem] relative flex flex-col bg-[#FFD907] shadow-sm rounded-t-2xl sm:rounded-2xl">
           <CloseButtonModal />
           {isAuthorized ? (
             <AuthorizationConfirmed name={name} />

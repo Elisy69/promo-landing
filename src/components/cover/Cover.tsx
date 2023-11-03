@@ -12,18 +12,18 @@ function Cover({ screenSize }: CoverProps) {
         <div className="relative mr-[4rem] ">
           <img
             className="lg:hidden"
-            src="/public/gifts-group.png"
+            src="/images/gifts-group.png"
             alt="gifts"
           />
           <img
             className="absolute top-[20%] left-[66%] w-[65%] lg:top-[90%] lg:left-[-5%] lg:w-[85%]"
-            src="/public/biggest-prize.png"
+            src="/images/biggest-prize.png"
             alt="big prize"
           />
         </div>
         <img
           className="absolute top-[-2%] w-[24%] lg:w-[35%] lg:top-[-7%] lg:left-[65%]"
-          src="/public/leaf-left.png"
+          src="/images/leaf-left.png"
           alt="leaf"
         />
       </div>
@@ -48,23 +48,23 @@ function Cover({ screenSize }: CoverProps) {
       </div>
       <div className="pr-6 pl-8 lg:relative lg:w-1/3 flex justify-center">
         {screenSize < desktop && (
-          <img className="" src="/public/bottle.png" alt="bottle" />
+          <img className="" src="/images/bottle.png" alt="bottle" />
         )}
       </div>
 
       <img
         className="z-0 hidden lg:block lg:absolute lg:left-[0%] lg:top-[1.5%] lg:w-[50%] "
-        src="/public/bottle.png"
+        src="/images/bottle.png"
         alt="bottle"
       />
       <img
         className="hidden lg:block absolute lg:left-[60%] lg:top-[30%] lg:w-[32%] "
-        src="/public/gifts-group.png"
+        src="/images/gifts-group.png"
         alt="gifts"
       />
       <img
         className="hidden lg:block absolute lg:left-[80%] lg:top-[35%] lg:w-[20%] "
-        src="/public/bubbles.png"
+        src="/images/bubbles.png"
         alt="bubbles"
       />
     </div>

@@ -7,9 +7,9 @@ interface GiftProps {
 }
 
 const GIFTS = [
-  { img: "public/scooter.png", text: "Электросамокат" },
-  { img: "public/alisa.png", text: "Колонка" },
-  { img: "public/watch.png", text: "Смарт часы" },
+  { img: "/images/scooter.png", text: "Электросамокат" },
+  { img: "/images/alisa.png", text: "Колонка" },
+  { img: "/images/watch.png", text: "Смарт часы" },
 ];
 
 const Gifts = forwardRef((props: GiftProps, ref: Ref<HTMLDivElement>) => {
@@ -28,7 +28,7 @@ const Gifts = forwardRef((props: GiftProps, ref: Ref<HTMLDivElement>) => {
           <div className="w-1/2 flex items-center justify-center">
             <img
               className="lg:w-[60%] xl:w-[50%] 2xl:w-[40%]"
-              src="public/gifts-goup2.png"
+              src="/images/gifts-goup2.png"
               alt="subscribtions"
             />
           </div>
@@ -87,7 +87,7 @@ const Gifts = forwardRef((props: GiftProps, ref: Ref<HTMLDivElement>) => {
       )}
       <img
         className="absolute hidden lg:block left-[93%] top-[45%] w-[7%]"
-        src="public/lemon.png"
+        src="/images/lemon.png"
         alt="lemon"
       />
     </div>
