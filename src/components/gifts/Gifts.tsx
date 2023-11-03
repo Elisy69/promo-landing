@@ -40,10 +40,10 @@ const Gifts = forwardRef((props: GiftProps, ref: Ref<HTMLDivElement>) => {
         </div>
       </section>
       <section className="flex flex-col gap-12  w-full lg:w-[85%] xl:w-[75%] 2xl:w-[65%]">
-        <h2 className="font-medium text-xl sm:text-2xl self-center pb-9 lg:pb-24 xl:pb-28 2xl:pb-32">
+        <h2 className="font-medium text-xl sm:text-2xl self-center pb-6 lg:pb-24 xl:pb-28 2xl:pb-32">
           Ежемесячный приз
         </h2>
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-8  w-full">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-8  w-full">
           {GIFTS.map((gift, index) => (
             <div
               key={index}
@@ -57,7 +57,7 @@ const Gifts = forwardRef((props: GiftProps, ref: Ref<HTMLDivElement>) => {
                 <img
                   className={`${
                     index === 1 &&
-                    "w-[100%] mb-[1rem] min-w-[7rem] max-w-[8rem]"
+                    "w-[100%] mb-[0.9rem] min-w-[7rem] max-w-[8rem]"
                   } ${
                     index === 0 && "mb-[5rem] lg:mb-[9rem] lg:w-[70%]"
                   } mb-[3rem] w-[80%] min-w-[6rem] max-w-[7rem] sm:max-w-[10rem] lg:max-w-[12rem] lg:mb-[6rem]`}
