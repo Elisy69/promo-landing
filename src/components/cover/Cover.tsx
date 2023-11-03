@@ -7,7 +7,7 @@ interface CoverProps {
 
 function Cover({ screenSize }: CoverProps) {
   return (
-    <div className="w-full lg:h-[47vw] bg-[#B1C728] px-6 gap-10 lg:gap-0 flex flex-col lg:flex-row-reverse lg:relative overflow-hidden lg:pt-2">
+    <div className="w-full lg:h-[47vw] bg-[#B1C728] px-6 gap-4 lg:gap-0 flex flex-col lg:flex-row-reverse lg:relative overflow-hidden lg:pt-2">
       <div className="relative w-full pt-4 lg:pt-0 lg:w-1/3">
         <div className="relative mr-[4rem] ">
           <img
@@ -42,7 +42,7 @@ function Cover({ screenSize }: CoverProps) {
             <span>ПРИЗЫ!</span>
           </>
         )}
-        <div className="z-10 pt-2">
+        <div className="z-10 pt-2 flex justify-center">
           <BaseButton desktopCover={true} text="УЧАСТВОВАТЬ" />
         </div>
       </div>

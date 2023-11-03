@@ -25,7 +25,7 @@ function DrawerMenu({ buttonNames }: DrawerMenuProps) {
         })}
       </div>
       <div className="flex justify-end">
-        <img src="public/DrawerLeaf.png" alt="DrawerLeaf" />
+        <img src="/images/DrawerLeaf.png" alt="DrawerLeaf" />
       </div>
     </div>
   );

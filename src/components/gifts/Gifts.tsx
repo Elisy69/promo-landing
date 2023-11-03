@@ -72,7 +72,7 @@ const Gifts = forwardRef((props: GiftProps, ref: Ref<HTMLDivElement>) => {
         </div>
       </section>
       {props.screenSize > 1024 ? (
-        <div className="lg:w-[85%] xl:w-[75%] 2xl:w-[65%] flex items-center justify-center mt-4">
+        <div className=" lg:w-[85%] xl:w-[75%] 2xl:w-[65%] flex items-center justify-center mt-4">
           <BaseButton
             desktopGifts={true}
             text={props.screenSize > 1024 ? "ЗАГРУЗИТЬ ЧЕК" : "УЧАСТВОВАТЬ"}
