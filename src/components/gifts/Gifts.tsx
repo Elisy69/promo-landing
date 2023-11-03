@@ -43,7 +43,7 @@ const Gifts = forwardRef((props: GiftProps, ref: Ref<HTMLDivElement>) => {
         <h2 className="font-medium text-xl sm:text-2xl self-center pb-6 lg:pb-24 xl:pb-28 2xl:pb-32">
           Ежемесячный приз
         </h2>
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-8  w-full">
+        <div className="flex flex-col lg:flex-row gap-9 lg:gap-8  w-full">
           {GIFTS.map((gift, index) => (
             <div
               key={index}
@@ -58,9 +58,9 @@ const Gifts = forwardRef((props: GiftProps, ref: Ref<HTMLDivElement>) => {
                   className={`${
                     index === 1 &&
                     "w-[100%] mb-[0.9rem] min-w-[7rem] max-w-[8rem]"
-                  } ${
-                    index === 0 && "mb-[5rem] lg:mb-[9rem] lg:w-[70%]"
-                  } mb-[3rem] w-[80%] min-w-[6rem] max-w-[7rem] sm:max-w-[10rem] lg:max-w-[12rem] lg:mb-[6rem]`}
+                  } ${index === 0 && "mb-[5rem] lg:mb-[9rem] lg:w-[70%]"} ${
+                    index === 2 && "mb-[3rem]"
+                  } w-[80%] min-w-[6rem] max-w-[7rem] sm:max-w-[10rem] lg:max-w-[12rem] lg:mb-[6rem]`}
                   src={gift.img}
                   alt={gift.text}
                 />
