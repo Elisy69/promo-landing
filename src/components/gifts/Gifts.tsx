@@ -43,11 +43,11 @@ const Gifts = forwardRef((props: GiftProps, ref: Ref<HTMLDivElement>) => {
         <h2 className="font-medium text-xl sm:text-2xl self-center pb-6 lg:pb-24 xl:pb-28 2xl:pb-32">
           Ежемесячный приз
         </h2>
-        <div className="flex flex-col lg:flex-row gap-10 :gap-8  w-full">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-8  w-full">
           {GIFTS.map((gift, index) => (
             <div
               key={index}
-              className="flex lg:flex-col bg-[#FFD907] rounded-3xl gap-6 lg:gap-0 p-6 w-full sm:w-[70%] self-center h-[6em] lg:min-h-[12.5rem] sm:h-[18vh] lg:h-[24vh]"
+              className="flex lg:flex-col bg-[#FFD907] rounded-3xl gap-6 lg:gap-0 p-6 w-full sm:w-[70%] self-center h-[6rem] lg:min-h-[15rem] sm:min-h-[10rem] "
             >
               <div
                 className={`${
@@ -60,7 +60,7 @@ const Gifts = forwardRef((props: GiftProps, ref: Ref<HTMLDivElement>) => {
                     "w-[100%] mb-[0.9rem] min-w-[7rem] max-w-[8rem] "
                   } ${
                     index === 0 &&
-                    "mb-[5rem] lg:mb-[9rem] xl:mb-[12rem] lg:w-[70%]"
+                    "mb-[5rem] lg:mb-[10rem] xl:mb-[12rem] lg:w-[70%]"
                   } ${
                     index === 2 && "mb-[3rem] lg:mb-[7rem] xl:mb-[8rem]"
                   } w-[80%] min-w-[6rem] max-w-[7rem] sm:max-w-[10rem] lg:max-w-[12rem] lg:mb-[6rem]`}
