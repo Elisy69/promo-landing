@@ -40,14 +40,14 @@ const Gifts = forwardRef((props: GiftProps, ref: Ref<HTMLDivElement>) => {
         </div>
       </section>
       <section className="flex flex-col gap-12  w-full lg:w-[85%] xl:w-[75%] 2xl:w-[65%]">
-        <h2 className="font-medium text-xl sm:text-2xl self-center pb-4 lg:pb-24 xl:pb-28 2xl:pb-32">
+        <h2 className="font-medium text-xl sm:text-2xl self-center pb-9 lg:pb-24 xl:pb-28 2xl:pb-32">
           Ежемесячный приз
         </h2>
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-8  w-full">
           {GIFTS.map((gift, index) => (
             <div
               key={index}
-              className="flex lg:flex-col bg-[#FFD907] rounded-3xl gap-6 lg:gap-0 p-6 w-full sm:w-[70%] self-center h-[12vh] sm:h-[18vh] lg:h-[24vh]"
+              className="flex lg:flex-col bg-[#FFD907] rounded-3xl gap-6 lg:gap-0 p-6 w-full sm:w-[70%] self-center h-[14vh] sm:h-[18vh] lg:h-[24vh]"
             >
               <div
                 className={`${
