@@ -18,7 +18,7 @@ function Cover({ screenSize }: CoverProps) {
           />
         </div>
         <img
-          className="absolute top-[-2%] w-[35%] lg:top-[-7%] lg:left-[65%]"
+          className="absolute top-[-2%] w-[24%] lg:w-[35%] lg:top-[-7%] lg:left-[65%]"
           src="public/leaf-left.png"
           alt="leaf"
         />

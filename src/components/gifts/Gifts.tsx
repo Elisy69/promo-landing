@@ -55,9 +55,11 @@ const Gifts = forwardRef((props: GiftProps, ref: Ref<HTMLDivElement>) => {
                 } relative w-[40%] lg:w-[100%] lg:h-[80%] flex items-center justify-center lg:mb-0 `}
               >
                 <img
-                  className={`${index === 1 && "w-[100%]"} ${
-                    index === 0 && "lg:mb-[11rem] lg:w-[70%]"
-                  } w-[80%] min-w-[6rem] max-w-[7rem] sm:max-w-[10rem] lg:max-w-[12rem] lg:mb-[6rem]`}
+                  className={`${
+                    index === 1 && "w-[100%] mb-[1rem] max-w-[8rem]"
+                  } ${
+                    index === 0 && "mb-[5rem] lg:mb-[11.1rem] lg:w-[70%]"
+                  } mb-[3rem] w-[80%] min-w-[6rem] max-w-[7rem] sm:max-w-[10rem] lg:max-w-[12rem] lg:mb-[6rem]`}
                   src={gift.img}
                   alt={gift.text}
                 />
